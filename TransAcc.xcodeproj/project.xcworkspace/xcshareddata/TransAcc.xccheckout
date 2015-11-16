@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B5FA4ACB-1F3A-4092-8ECF-DC8CC6E70FA1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D2B5EFE6F403D226D6BA310B8BA7A66ABE1A142A</key>
+		<string>https://github.com/yogabo/TransAcc</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>TransAcc/TransAcc.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D2B5EFE6F403D226D6BA310B8BA7A66ABE1A142A</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yogabo/TransAcc</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D2B5EFE6F403D226D6BA310B8BA7A66ABE1A142A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D2B5EFE6F403D226D6BA310B8BA7A66ABE1A142A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TransAcc</string>
+		</dict>
+	</array>
+</dict>
+</plist>
