@@ -37,7 +37,7 @@ class TransViewController: UITableViewController {
             for (key, subJson) in json {
                 
                 if (key == "transactions"){
-                    for (trakey, transJson) in subJson {
+                    for (_, transJson) in subJson {
                       let transItem: TransItem = TransItem()
                         
                        if let transactionType = transJson["transactionType"].string {

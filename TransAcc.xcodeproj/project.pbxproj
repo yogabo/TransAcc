@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		E97163471BF4E61300BDEE77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E97163451BF4E61300BDEE77 /* LaunchScreen.storyboard */; };
 		E99943861BF5392A00411C45 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99943851BF5392A00411C45 /* SwiftyJSON.swift */; };
 		E99943881BF53AED00411C45 /* RestApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E99943871BF53AED00411C45 /* RestApiManager.swift */; };
+		E99983271C0450DB0093B1A4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99983251C0450DB0093B1A4 /* Fabric.framework */; };
+		E99983281C0450DB0093B1A4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E99983261C0450DB0093B1A4 /* Crashlytics.framework */; };
 		E9AA7FC21BF7EFE2002758B7 /* TransViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9AA7FC11BF7EFE2002758B7 /* TransViewController.swift */; };
 		E9BBCB4B1BF7311100266402 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9BBCB4A1BF7311100266402 /* Account.swift */; };
 		E9DB9DA11BF8B245009BE601 /* TransItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9DB9DA01BF8B245009BE601 /* TransItem.swift */; };
@@ -31,6 +33,8 @@
 		E97163481BF4E61300BDEE77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E99943851BF5392A00411C45 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Resources/SwiftyJSON.swift; sourceTree = "<group>"; };
 		E99943871BF53AED00411C45 /* RestApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestApiManager.swift; path = Model/Network/RestApiManager.swift; sourceTree = "<group>"; };
+		E99983251C0450DB0093B1A4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E99983261C0450DB0093B1A4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		E9AA7FC11BF7EFE2002758B7 /* TransViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransViewController.swift; path = Controllers/TransViewController.swift; sourceTree = "<group>"; };
 		E9BBCB4A1BF7311100266402 /* Account.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Account.swift; path = Model/Account.swift; sourceTree = "<group>"; };
 		E9DB9DA01BF8B245009BE601 /* TransItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TransItem.swift; path = Model/TransItem.swift; sourceTree = "<group>"; };
@@ -43,6 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E99983281C0450DB0093B1A4 /* Crashlytics.framework in Frameworks */,
+				E99983271C0450DB0093B1A4 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +60,8 @@
 			children = (
 				E971633B1BF4E61300BDEE77 /* TransAcc */,
 				E971633A1BF4E61300BDEE77 /* Products */,
+				E99983251C0450DB0093B1A4 /* Fabric.framework */,
+				E99983261C0450DB0093B1A4 /* Crashlytics.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +159,7 @@
 				E97163351BF4E61300BDEE77 /* Sources */,
 				E97163361BF4E61300BDEE77 /* Frameworks */,
 				E97163371BF4E61300BDEE77 /* Resources */,
+				E99983241C044F810093B1A4 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -177,7 +186,7 @@
 				};
 			};
 			buildConfigurationList = E97163341BF4E61300BDEE77 /* Build configuration list for PBXProject "TransAcc" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -206,6 +215,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E99983241C044F810093B1A4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cfc6fd9cba2e84ef6c522fe544af08d650511003 46750909e415036046c27965e618d1cb8662bfcff53bd180703d61a82b2b62b4";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E97163351BF4E61300BDEE77 /* Sources */ = {
@@ -332,6 +357,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TransAcc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sytensky.TransAcc;
@@ -344,6 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = TransAcc/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sytensky.TransAcc;

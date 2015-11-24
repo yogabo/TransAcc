@@ -41,7 +41,7 @@ class ViewController: UITableViewController {
     /// Data source for collection and table view
     func loadData() {
         RestApiManager.sharedInstance.listOfAllAcc { (json: JSON) in
-            for (key, subJson) in json {
+            for (_, subJson) in json {
                 if let name: NSString = subJson["name"].string {
                     self.items.addObject(name)
                     self.ids.addObject(subJson["accNumber"].string!)
